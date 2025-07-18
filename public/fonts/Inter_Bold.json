@@ -1,0 +1,38 @@
+
+{
+  "glyphs": {
+    "P": {"ha": 600, "x_min": 76, "x_max": 574, "o": "m 76 0 l 76 710 l 353 710 q 468 691 532 638 q 596 491 596 381 q 531 274 596 343 q 353 213 473 213 l 173 213 l 173 0 l 76 0 m 173 291 l 353 291 q 413 313 453 344 q 499 466 499 381 q 413 627 499 564 q 353 649 381 649 q 173 649 353 649 l 173 291 "},
+    "o": {"ha": 600, "x_min": 29, "x_max": 571, "o": "m 300 -12 q 163 51 230 -12 q 29 245 96 114 q 155 442 91 339 q 300 531 225 531 q 437 442 370 531 q 571 245 504 353 q 445 51 545 152 q 300 -12 362 -12 m 300 469 q 209 408 247 469 q 123 248 165 337 q 205 103 161 188 q 300 69 233 69 q 391 103 353 69 q 477 248 435 146 q 395 408 440 337 q 300 469 368 469 "},
+    "r": {"ha": 600, "x_min": 76, "x_max": 557, "o": "m 76 0 l 76 519 l 163 519 l 163 398 q 231 475 187 439 q 326 519 280 519 q 557 398 456 519 l 500 339 q 369 430 423 430 q 224 351 269 430 q 163 247 180 272 l 163 0 l 76 0 "},
+    "t": {"ha": 600, "x_min": 44, "x_max": 556, "o": "m 295 -12 q 180 9 235 -12 q 137 38 168 18 l 164 98 q 237 74 207 84 q 299 65 264 65 q 414 105 374 65 q 441 156 434 123 l 441 207 l 290 207 l 290 276 l 441 276 l 441 519 l 528 519 l 528 276 l 556 276 l 556 207 l 528 207 l 528 180 q 482 77 528 121 q 295 -12 431 -12 m 117 207 l 44 207 l 44 276 l 117 276 l 117 693 l 204 693 l 204 276 l 290 276 l 290 207 l 204 207 l 204 163 q 224 100 204 122 q 285 78 245 78 l 285 0 q 177 27 229 0 q 117 161 125 53 l 117 207 "},
+    "f": {"ha": 600, "x_min": 44, "x_max": 556, "o": "m 145 0 l 145 207 l 44 207 l 44 276 l 145 276 l 145 610 q 201 710 145 676 q 313 735 245 735 q 369 731 342 735 q 430 719 396 727 l 413 650 q 372 659 397 654 q 314 665 347 665 q 231 649 265 665 q 199 604 199 633 q 199 276 199 574 l 401 276 l 401 207 l 199 207 l 199 0 l 145 0 "},
+    "l": {"ha": 600, "x_min": 76, "x_max": 174, "o": "m 76 0 l 76 730 l 174 730 l 174 0 l 76 0 "},
+    "i": {"ha": 600, "x_min": 76, "x_max": 174, "o": "m 76 0 l 76 519 l 174 519 l 174 0 l 76 0 m 80 621 l 80 730 l 170 730 l 170 621 l 80 621 "}
+  },
+  "familyName": "Inter",
+  "ascender": 969,
+  "descender": -241,
+  "underlinePosition": -175,
+  "underlineThickness": 50,
+  "boundingBox": {"yMin": -431, "xMin": -1035, "yMax": 1554, "xMax": 2299},
+  "resolution": 1000,
+  "original_font_information": {
+    "format": 0,
+    "copyright": "Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)",
+    "fontFamily": "Inter",
+    "fontSubfamily": "Bold",
+    "uniqueID": "3.19;RSMS;Inter-Bold",
+    "fullName": "Inter Bold",
+    "version": "3.19",
+    "postScriptName": "Inter-Bold",
+    "trademark": "Inter is a trademark of Rasmus Andersson.",
+    "manufacturer": "Rasmus Andersson",
+    "designer": "Rasmus Andersson",
+    "manufacturerURL": "https://rsms.me/",
+    "designerURL": "https://rsms.me/",
+    "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+    "licenseURL": "https://scripts.sil.org/OFL"
+  },
+  "cssFontWeight": "bold",
+  "cssFontStyle": "normal"
+}
