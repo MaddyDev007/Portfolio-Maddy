@@ -16,8 +16,11 @@ const HeroImage = () => {
   }, []);
 
   return (
-    <div ref={imageRef} className="flex pb-10 justify-center w-full">
-      <img className="w-[250px] aspect-square md:w-[350px]" src="/face1.webp" alt="Mathavan" />
+    <div ref={imageRef} className="flex relative pb-10 justify-center w-full">
+      <img className="w-[200px] aspect-square rounded-full md:w-[300px]" src="/face5.jpg" alt="Mathavan" />
+      <span className="wave wave1 md:w-[300px] w-[200px]"></span>
+      <span className="wave wave2 md:w-[300px] w-[200px]"></span>
+      <span className="wave wave3 md:w-[300px] w-[200px]"></span>
     </div>
   );
 };

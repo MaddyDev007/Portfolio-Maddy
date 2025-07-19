@@ -161,3 +161,30 @@
     transform: translate(30px, -30px);
   }
 }
+
+@keyframes wave {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  100%{
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+.wave{
+  background-color: #5015D9;
+  position: absolute;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  z-index: -1;
+  animation: wave 3s infinite ease-out;
+}
+
+.wave2{
+  animation-delay: 1s;
+}
+.wave3{
+  animation-delay: 2s;
+}
