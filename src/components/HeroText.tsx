@@ -42,7 +42,6 @@ const HeroText = ({ onSectionChange }: HeroTextProps) => {
   const handleButtonLeave = (e: React.MouseEvent<HTMLButtonElement>) => {
     gsap.to(e.currentTarget, {
       scale: 1,
-      boxShadow: "0 10px 15px -3px rgba(139, 92, 246, 0.3)",
       duration: 0.3,
       ease: "power2.out"
     });
@@ -69,17 +68,17 @@ const HeroText = ({ onSectionChange }: HeroTextProps) => {
   return (
     <div ref={containerRef}>
       <div>
-        <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
+        <h1 ref={titleRef} className="transition-colors duration-300  text-5xl md:text-7xl font-bold bg-clip-text text-transparent dark:bg-gradient-to-r dark:from-purple-500 dark:to-blue-500 bg-gradient-to-r from-purple-700 to-blue-700">
           Mathavan
         </h1>
       </div>
       <div>
-        <p ref={subtitleRef} className="text-2xl md:text-3xl mt-4 text-gray-300">
+        <p ref={subtitleRef} className="transition-colors duration-300  text-2xl md:text-3xl mt-4 text-black dark:text-gray-300">
           Full Stack Developer
         </p>
       </div>
       <div>
-        <p ref={descriptionRef} className="pt-6 md:text-xl max-w-lg text-gray-400">
+        <p ref={descriptionRef} className="transition-colors duration-300  pt-6 md:text-xl max-w-lg text-gray-700 dark:text-gray-400">
           I craft interactive experiences and digital solutions that
           solve real-world problems. Passionate about creating
           beautiful, functional software.
@@ -91,7 +90,7 @@ const HeroText = ({ onSectionChange }: HeroTextProps) => {
           onClick={handleConnectClick}
           onMouseEnter={handleButtonHover}
           onMouseLeave={handleButtonLeave}
-          className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full text-white font-medium text-lg shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50"
+          className="transition-colors duration-300 px-8 py-3 dark:bg-gradient-to-r dark:from-purple-600 dark:to-blue-500 bg-gradient-to-r from-purple-700 to-blue-700 rounded-full text-white font-medium text-lg shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50"
         >
           Let's Connect
         </button>
@@ -103,7 +102,7 @@ const HeroText = ({ onSectionChange }: HeroTextProps) => {
           rel="noopener noreferrer"
           onMouseEnter={handleSocialHover}
           onMouseLeave={handleSocialLeave}
-          className="text-gray-400 hover:drop-shadow-glow hover:text-white transition-colors duration-300"
+          className="text-gray-700 hover:text-black dark:text-gray-400 hover:drop-shadow-glow dark:hover:text-white transition-colors duration-300"
         >
           <Github size={24} />
         </a>
@@ -113,7 +112,7 @@ const HeroText = ({ onSectionChange }: HeroTextProps) => {
           rel="noopener noreferrer"
           onMouseEnter={handleSocialHover}
           onMouseLeave={handleSocialLeave}
-          className="text-gray-400 hover:drop-shadow-glow hover:text-white transition-colors duration-300"
+          className="text-gray-700 hover:text-black dark:text-gray-400 hover:drop-shadow-glow dark:hover:text-white transition-colors duration-300"
         >
           <Instagram size={24} />
         </a>
@@ -123,7 +122,7 @@ const HeroText = ({ onSectionChange }: HeroTextProps) => {
           rel="noopener noreferrer"
           onMouseEnter={handleSocialHover}
           onMouseLeave={handleSocialLeave}
-          className="text-gray-400 hover:drop-shadow-glow hover:text-white transition-colors duration-300"
+          className="text-gray-700 hover:text-black dark:text-gray-400 hover:drop-shadow-glow dark:hover:text-white transition-colors duration-300"
         >
           <Linkedin size={24} />
         </a>

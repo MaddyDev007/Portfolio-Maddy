@@ -65,13 +65,13 @@ const ResumeSection: React.FC = () => {
     >
       <h2 
         ref={titleRef}
-        className="pb-2 text-5xl md:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500"
+        className="transition-colors duration-300 pb-2 text-5xl md:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-blue-700 dark:bg-gradient-to-r dark:from-purple-400 dark:to-blue-500"
       >
         My Resume
       </h2>
       <p 
         ref={descriptionRef}
-        className="text-lg md:text-xl text-gray-300 max-w-2xl mb-12"
+        className="transition-colors duration-300 text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mb-12"
       >
         Interested in learning more about my professional experience and skills? Download my resume to get a comprehensive overview.
       </p>
@@ -84,7 +84,7 @@ const ResumeSection: React.FC = () => {
           onClick={handleDownload}
           asChild
           size="lg"
-          className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold hover:from-purple-700 hover:to-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+          className="bg-gradient-to-r from-purple-700 to-blue-700 dark:bg-gradient-to-r dark:from-purple-400 dark:to-blue-500 text-white font-semibold hover:from-purple-700 hover:to-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
         >
           <a
             href="/resume.pdf"
@@ -132,7 +132,7 @@ const ResumeSection: React.FC = () => {
       </div>
       <p 
         ref={noteRef}
-        className="mt-8 text-sm text-gray-500"
+        className="mt-8 text-sm text-gray-800 dark:text-gray-500"
       >
         (PDF Format)
       </p>

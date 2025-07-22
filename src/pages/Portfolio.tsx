@@ -89,7 +89,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white overflow-hidden relative">
+    <div className="min-h-screen bg-[url(bg.webp)] bg-no-repeat bg-cover dark:bg-gradient-to-br dark:from-gray-900 dark:via-purple-900 dark:to-black dark:text-white overflow-hidden relative">
       <ParticlesBackground />
       <MouseTracker />
 

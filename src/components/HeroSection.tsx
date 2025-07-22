@@ -24,7 +24,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
 
   return (
     <div ref={sectionRef} className="relative md:h-screen md:overflow-hidden">
-      <div className="-z-10 hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
+      <div className="-z-10 hidden dark:md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
        { <HeroCanvas />}
       </div>
 

@@ -27,7 +27,7 @@ const MouseTracker: React.FC = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-8 h-8 rounded-full bg-purple-500/50 pointer-events-none z-[9999] border-2 border-purple-300"
+      className="fixed top-0 left-0 w-8 h-8 rounded-full bg-purple-700/50 dark:bg-purple-500/50 pointer-events-none z-[9999] border-2 border-purple-600 dark:border-purple-300"
       style={{
         translateX: '-50%',
         translateY: '-50%',

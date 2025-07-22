@@ -110,10 +110,10 @@ const ProjectsSection = () => {
     <div ref={sectionRef} className="min-h-screen py-24 px-4 md:px-8 overflow-y-auto">
       <div className="max-w-6xl mx-auto">
         <div ref={titleRef} className="text-center mb-16">
-          <h2 className="text-5xl font-bold bg-clip-text text-transparent pb-2 bg-gradient-to-r from-purple-400 to-blue-500">
+          <h2 className="transition-colors duration-300 text-5xl font-bold bg-clip-text text-transparent pb-2 dark:bg-gradient-to-r dark:from-purple-500 dark:to-blue-500 bg-gradient-to-r from-purple-700 to-blue-700">
             My Projects
           </h2>
-          <p className="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="transition-colors duration-300 mt-6 text-xl text-gray-700 dark:text-gray-400 max-w-2xl mx-auto ">
             Selected works showcasing my skills and experience in creating digital solutions.
           </p>
         </div>
@@ -123,7 +123,7 @@ const ProjectsSection = () => {
             <div
               key={project.id}
               ref={(el) => { projectRefs.current[index] = el; }}
-              className="bg-white/10  rounded-2xl overflow-hidden backdrop-blur-lg border border-white/20 cursor-pointer"
+              className="bg-white/70 dark:bg-white/10  rounded-2xl overflow-hidden backdrop-blur-lg border border-black/20 dark:border-white/20 cursor-pointer transition-colors duration-300"
               onMouseEnter={handleProjectHover}
               onMouseLeave={handleProjectLeave}
             >
@@ -140,13 +140,13 @@ const ProjectsSection = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2 text-white">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
+                <h3 className="transition-colors duration-300 text-2xl font-bold mb-2 text-black dark:text-white">{project.title}</h3>
+                <p className="transition-colors duration-300 text-gray-700 dark:text-gray-400 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex} 
-                      className="inline-block px-3 py-1 text-sm bg-white/10 rounded-full text-blue-300"
+                      className="transition-colors duration-300 inline-block px-3 py-1 text-sm dark:bg-white/10 rounded-full text-blue-700 dark:text-blue-300"
                     >
                       {tag}
                     </span>

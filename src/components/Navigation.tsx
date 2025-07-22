@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 interface NavigationProps {
   currentSection: string;
@@ -71,18 +72,19 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
   if (isMobile) {
     return (
       <nav ref={navRef} className="fixed top-0 left-0 right-0 z-50 p-4">
-        <div className="max-w-6xl mx-auto flex justify-end">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <ThemeToggle />
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
               <button
-                className="p-3 bg-white/10 backdrop-blur-lg rounded-full border border-white/20 text-white"
+                className="p-3 hover:bg-transparent transition-all duration-300 bg-white dark:bg-white/10 backdrop-blur-lg rounded-full text-black/80 hover:text-black border border-black/20 dark:border-white/20 dark:text-white/70 "
                 onMouseEnter={handleMenuButtonHover}
                 onMouseLeave={handleMenuButtonLeave}
               >
                 <Menu size={24} />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-white/10 backdrop-blur-lg border-l-white/20 text-white p-6 w-[250px]">
+            <SheetContent side="right" className=  "transition-colors duration-300 bg-white/70 dark:bg-white/10 backdrop-blur-lg border-l-white/20 text-black dark:text-white p-6 w-[250px]">
               <div className="flex flex-col space-y-6 mt-10">
                 {navItems.map((item, index) => (
                   <SheetClose asChild key={item.id}>
@@ -92,7 +94,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
                       className={`relative px-4 py-3 rounded-lg text-lg transition-colors duration-300 w-full text-left ${
                         currentSection === item.id
                           ? 'text-white bg-purple-600/80'
-                          : 'text-white/80 hover:text-white hover:bg-white/10'
+                          : 'text-black/80 hover:text-black  dark:text-white/80 dark:hover:text-white hover:bg-white/10'
                       }`}
                       onMouseEnter={(e) => gsap.to(e.currentTarget, { x: 5, duration: 0.2 })}
                       onMouseLeave={(e) => gsap.to(e.currentTarget, { x: 0, duration: 0.2 })}
@@ -111,8 +113,9 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
 
   return (
     <nav ref={navRef} className="fixed top-0 left-0 right-0 z-50 p-6">
-      <div className="max-w-6xl mx-auto flex justify-center">
-        <div className="bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 border border-white/20 relative">
+      <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <div className='flex-1 flex justify-center'>
+        <div className="bg-white/80 dark:bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 border border-black/20 dark:border-white/20 relative">
           <div 
             ref={activeIndicatorRef}
             className="absolute inset-y-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"
@@ -126,8 +129,8 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
                 onClick={() => onSectionChange(item.id)}
                 className={`relative px-4 py-2 rounded-full transition-colors duration-300 font-medium ${
                   currentSection === item.id
-                    ? 'text-white'
-                    : 'text-white/70 hover:text-white'
+                    ? ' dark:text-white text-white drop-shadow-sm'
+                    : 'text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white'
                 }`}
                 onMouseEnter={handleButtonHover}
                 onMouseLeave={handleButtonLeave}
@@ -137,6 +140,8 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
             ))}
           </div>
         </div>
+        </div>
+        <ThemeToggle />
       </div>
     </nav>
   );

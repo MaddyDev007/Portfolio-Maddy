@@ -18,7 +18,7 @@ const ParticlesBackground = () => {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      className="fixed inset-0 z-0"
+      className="fixed hidden dark:block inset-0 z-0"
       options={{
         background: {
           color: {

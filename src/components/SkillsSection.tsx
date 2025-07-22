@@ -101,10 +101,10 @@ const SkillsSection = () => {
     <div ref={sectionRef} className="min-h-screen py-24 px-4 md:px-8 flex items-center overflow-y-auto">
       <div className="max-w-6xl mx-auto w-full">
         <div ref={titleRef} className="text-center mb-16">
-          <h2 className="text-5xl pb-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
+          <h2 className="transition-colors duration-300 text-5xl pb-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-blue-700 dark:bg-gradient-to-r dark:from-purple-400 dark:to-blue-500">
             My Skills
           </h2>
-          <p className="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="transition-colors duration-300 mt-6 text-xl text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
             Technical expertise and competencies I've developed throughout my career.
           </p>
         </div>
@@ -115,11 +115,11 @@ const SkillsSection = () => {
               {skills.slice(0, 4).map((skill, index) => (
                 <div key={index} className="space-y-2" data-skill={skill.name}>
                   <div className="flex justify-between items-center">
-                    <span className="text-xl text-white font-medium">{skill.name}</span>
-                    <span className="text-lg text-blue-300">{skill.level}%</span>
+                    <span className="transition-colors duration-300 text-xl text-black dark:text-white font-medium">{skill.name}</span>
+                    <span className="transition-colors duration-300 text-lg text-blue-700 dark:text-blue-300">{skill.level}%</span>
                   </div>
-                  <div className="h-3 w-full bg-gray-700 rounded-full overflow-hidden">
-                    <div className="skill-bar h-full bg-gradient-to-r from-purple-500 to-blue-500 rounded-full" />
+                  <div className="transition-colors duration-300 h-3 w-full bg-gray-300 dark:bg-gray-700 rounded-full overflow-hidden">
+                    <div className="transition-colors duration-300 skill-bar h-full bg-gradient-to-r from-purple-700 to-blue-700 dark:bg-gradient-to-r dark:from-purple-400 dark:to-blue-500 rounded-full" />
                   </div>
                 </div>
               ))}
@@ -131,11 +131,11 @@ const SkillsSection = () => {
               {skills.slice(4).map((skill, index) => (
                 <div key={index} className="space-y-2" data-skill={skill.name}>
                   <div className="flex justify-between items-center">
-                    <span className="text-xl text-white font-medium">{skill.name}</span>
-                    <span className="text-lg text-blue-300">{skill.level}%</span>
+                    <span className="transition-colors duration-300 text-xl text-black dark:text-white font-medium">{skill.name}</span>
+                    <span className="transition-colors duration-300 text-lg text-blue-700 dark:text-blue-300">{skill.level}%</span>
                   </div>
-                  <div className="h-3 w-full bg-gray-700 rounded-full overflow-hidden">
-                    <div className="skill-bar h-full bg-gradient-to-r from-purple-500 to-blue-500 rounded-full" />
+                  <div className="transition-colors duration-300 h-3 w-full bg-gray-300 dark:bg-gray-700 rounded-full overflow-hidden">
+                    <div className="transition-colors duration-300 skill-bar h-full bg-gradient-to-r from-purple-700 to-blue-700 dark:bg-gradient-to-r dark:from-purple-400 dark:to-blue-500 rounded-full" />
                   </div>
                 </div>
               ))}
@@ -144,13 +144,13 @@ const SkillsSection = () => {
         </div>
 
         <div ref={otherTechRef} className="mt-20 text-center">
-          <h3 className="text-2xl font-bold text-white mb-6">Other Technologies</h3>
+          <h3 className="transition-colors duration-300 text-2xl font-bold text-black dark:text-white mb-6">Other Technologies</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {['AWS', 'Docker', 'REST APIs', 'MongoDB', 'PostgreSQL', 'Firebase', 'Redux', 'Next.js'].map((tech, index) => (
               <div
                 key={index}
                 ref={(el) => { techItemsRef.current[index] = el; }}
-                className="px-6 py-3 bg-white/10 rounded-full text-white font-medium border border-white/20 backdrop-blur-sm cursor-pointer"
+                className=" px-6 py-3 dark:bg-white/10 rounded-full text-black dark:text-white font-medium border border-black/20 dark:border-white/20 backdrop-blur-sm cursor-pointer"
                 onMouseEnter={handleTechItemHover}
                 onMouseLeave={handleTechItemLeave}
               >
